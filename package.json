@@ -1,10 +1,8 @@
 {
   "name": "@vuoz/theme-api",
-  "version": "0.1.76",
+  "version": "0.1.77",
   "description": "",
-  "exports": {
-    ".": "./dist"
-  },
+  "main": "./dist",
   "scripts": {
     "build": "rm -rf ./dist && cp -a ./src/api/. ./dist/"
   },
