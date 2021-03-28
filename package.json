@@ -1,0 +1,11 @@
+{
+  "name": "@vuoz/theme-api",
+  "version": "0.1.75",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && cp -a ./src/api/. ./dist/"
+  },
+  "author": "",
+  "license": "ISC"
+}
