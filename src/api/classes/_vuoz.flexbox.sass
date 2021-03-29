@@ -19,3 +19,15 @@
 
 .flex-shrink
   flex-shrink: 1
+
+.is-flex,
+.is-inline-flex,
+.is-flex-column,
+.is-inline-flex-column
+  &.align-center
+    align-items: center
+  &.justify-center
+    justify-content: center
+  &.center
+    @extend .align-center
+    @extend .justify-center
