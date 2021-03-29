@@ -1,10 +1,11 @@
 {
   "name": "@vuoz/theme-api",
-  "version": "0.1.79",
+  "version": "0.1.80",
   "description": "",
   "main": "./dist",
   "scripts": {
-    "build": "rm -rf ./dist && cp -a ./src/api/. ./dist/"
+    "build": "rm -rf ./dist && cp -a ./src/api/. ./dist/",
+    "deploy": "node update.build.js && yarn run build && git add . && git commit -m 'Auto update.' && git push -u origin master"
   },
   "author": "",
   "license": "ISC",
