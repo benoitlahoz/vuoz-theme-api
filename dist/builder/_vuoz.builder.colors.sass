@@ -9,6 +9,14 @@
   $-colors: map-merge($-base-colors, map-merge($-grey-colors, $-highlight-colors))
   $-state-colors: ('primary': $primary, 'secondary': $secondary, 'success': $success, 'warning': $warning, 'danger': $danger)
   $-colors: map-merge($-colors, $-state-colors)
+
+  .has-primary-background
+    background-color: $primary-background
+  .has-secondary-background
+    background-color: $secondary-background
+  .has-tertiary-background
+    background-color: $tertiary-background
+
   @each $name, $color in $-colors
     .is-#{$name}
       color: $color
