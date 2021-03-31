@@ -13,9 +13,29 @@
       font-size: #{$size}#{$fontUnit}
       letter-spacing: #{$size * 0.03}#{$fontUnit}
       word-spacing: #{$size * 0.2}#{$fontUnit}
+    .has-text-secondary-#{$name}
+      font-family: $secondary-font-family
+      color: $default-font-color
+      font-size: #{$size}#{$fontUnit}
+      letter-spacing: #{$size * 0.03}#{$fontUnit}
+      word-spacing: #{$size * 0.2}#{$fontUnit}
+    .has-text-mono-#{$name}
+      font-family: $mono-font-family
+      color: $default-font-color
+      font-size: #{$size}#{$fontUnit}
+      letter-spacing: #{$size * 0.03}#{$fontUnit}
+      word-spacing: #{$size * 0.2}#{$fontUnit}
 
   @each $name, $weight in $-font-weights
     .has-text-#{$name}
       font-family: $default-font-family
+      font-weight: $weight
+      color: $default-font-color
+    .has-text-secondary-#{$name}
+      font-family: $secondary-font-family
+      font-weight: $weight
+      color: $default-font-color
+    .has-text-mono-#{$name}
+      font-family: $mono-font-family
       font-weight: $weight
       color: $default-font-color
