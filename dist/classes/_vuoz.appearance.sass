@@ -26,13 +26,13 @@
   box-shadow: $shadow-x $shadow-y $shadow-spread rgba($black, $shadow-opacity)
 
 .has-shadow-bottom
-  @extend .has-shadow
+  box-shadow: 0 $shadow-y $shadow-spread rgba($black, $shadow-opacity)
 
 .has-shadow-top
-  box-shadow: $shadow-x -#{$shadow-y} $shadow-spread rgba($black, $shadow-opacity)
+  box-shadow: 0 -#{$shadow-y} $shadow-spread rgba($black, $shadow-opacity)
 
 .has-shadow-right
-  @extend .has-shadow
+  box-shadow: $shadow-x 0 $shadow-spread rgba($black, $shadow-opacity)
 
 .has-shadow-left
-  box-shadow: -#{$shadow-x} $shadow-y $shadow-spread rgba($black, $shadow-opacity)
+  box-shadow: -#{$shadow-x} 0 $shadow-spread rgba($black, $shadow-opacity)
