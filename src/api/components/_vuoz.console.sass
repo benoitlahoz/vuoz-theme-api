@@ -1,0 +1,28 @@
+.vuoz-console__container
+  @extend .flex-grow
+  overflow: hidden
+  &.has-toolbar-top,
+  &.has-toolbar-bottom
+    @extend .is-flex-column
+  &.has-toolbar-left,
+  &.has-toolbar-right
+    @extend .is-flex
+  .accessory-cell
+    @extend .has-border-medium-grey
+    @extend .is-rounded
+    @extend .has-text-mono-ultra-light
+    &.time-line-height-small
+      line-height: 1.1rem
+    &.time-line-height-normal
+      line-height: 1.35rem
+    &.time-line-height-large
+      line-height: 1.5rem
+
+  .vuoz-console__container
+    .vuoz-console__content
+      @extend .is-flex-column
+      @extend .flex-grow
+      max-height: 100% 
+      overflow-y: scroll 
+      overflow-x: hidden"
+  )

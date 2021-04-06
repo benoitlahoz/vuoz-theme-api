@@ -1,0 +1,18 @@
+table
+  &.vuoz-table
+    @extend .is-flex
+    width: 100%
+    table-layout: auto
+    tbody
+      @extend .flex-grow
+      tr
+        @extend .is-flex
+        &.item-height-small
+          height: 2rem
+        &.item-height-normal
+          height: 2.5rem
+        &.item-height-large
+          height: 3rem
+        td
+          @extend .is-flex
+          @extend .align-center
