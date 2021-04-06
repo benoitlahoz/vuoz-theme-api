@@ -12,10 +12,19 @@
 
   .has-primary-background
     background-color: $primary-background
+    input
+      &::placeholder
+        color: darken($primary-background, $shade)
   .has-secondary-background
     background-color: $secondary-background
+    input
+      &::placeholder
+        color: darken($primary-background, $shade)
   .has-tertiary-background
     background-color: $tertiary-background
+    input
+      &::placeholder
+        color: darken($primary-background, $shade)
 
   @each $name, $color in $-colors
     .is-#{$name}
@@ -44,3 +53,6 @@
       border-bottom: 1px solid darken($color, $shade)
     .has-border-right-#{$name}-shaded
       border-right: 1px solid darken($color, $shade)
+    input
+      &::placeholder
+        color: darken($color, $shade)
