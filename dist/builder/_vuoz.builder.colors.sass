@@ -31,6 +31,9 @@
       color: $color
     .has-background-#{$name}
       background-color: $color
+      input
+        &::placeholder
+          color: lighten($color, $shade)
     .has-background-#{$name}-shaded
       background-color: darken($color, $shade)
     .has-border-#{$name}
@@ -53,6 +56,3 @@
       border-bottom: 1px solid darken($color, $shade)
     .has-border-right-#{$name}-shaded
       border-right: 1px solid darken($color, $shade)
-      input
-        &::placeholder
-          color: lighten($color, $shade)
