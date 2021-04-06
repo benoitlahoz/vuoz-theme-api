@@ -15,16 +15,22 @@
     input
       &::placeholder
         color: lighten($primary-background, $light)
+      &::selection
+        background-color: darken($primary-background, $shade)
   .has-secondary-background
     background-color: $secondary-background
     input
       &::placeholder
-        color: lighten($primary-background, $light)
+        color: lighten($secondary-background, $light)
+      &::selection
+        background-color: darken($secondary-background, $shade)
   .has-tertiary-background
     background-color: $tertiary-background
     input
       &::placeholder
-        color: lighten($primary-background, $light)
+        color: lighten($tertiary-background, $light)
+      &::selection
+        background-color: darken($tertiary-background, $shade)
 
   @each $name, $color in $-colors
     .is-#{$name}
@@ -34,6 +40,8 @@
       input
         &::placeholder
           color: lighten($color, $light)
+        &::selection
+          background-color: darken($color, $shade)
     .has-background-#{$name}-shaded
       background-color: darken($color, $shade)
     .has-border-#{$name}
