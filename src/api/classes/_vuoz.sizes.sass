@@ -1,7 +1,13 @@
-.is-fullsize
-  height: 100%
+.is-fullwidth
   width: 100%
-  min-height: 100%
-  max-height: 100%
   min-width: 100%
   max-width: 100%
+
+.is-fullheight
+  height: 100%
+  min-height: 100%
+  max-height: 100%
+
+.is-fullsize
+  @extend .is-fullwidth
+  @extend .is-fullheight
