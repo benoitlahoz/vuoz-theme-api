@@ -1,0 +1,35 @@
+.vuoz-split-view__container
+  @extend .flex-grow
+  position: relative
+  &.is-vertical
+    @extend .is-flex
+    &.dragging
+      cursor: col-resize
+  &.is-horizontal
+    @extend .is-flex-column
+    &.dragging
+      cursor: row-resize
+
+.vuoz-split-view__separator
+  position: absolute
+  &.is-vertical
+    &.hovered
+      .vuoz-split-view__separator-displayed
+        @extend .has-border-left-primary
+    .vuoz-split-view__separator-displayed
+      @extend .has-border-left-medium-grey
+      width: 1px
+      height: 100%
+  &.is-horizontal
+    &.hovered
+      .vuoz-split-view__separator-displayed
+        @extend .has-border-top-primary
+    .vuoz-split-view__separator-displayed
+      @extend .has-border-top-medium-grey
+      width: 100%
+      height: 1px
+  .vuoz-split-view__separator-displayed
+    position: absolute
+
+.vuoz-split-view__unselectable
+  @extend .is-unselectable
