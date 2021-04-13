@@ -3,10 +3,16 @@ table
     @extend .is-flex
     width: 100%
     table-layout: auto
+    outline: none
     tbody
       @extend .flex-grow
+      width: 100%
       tr
         @extend .is-flex
+        @extend .align-center
+        width: 100%
+        &.item-height-small-thin
+          min-height: 1.5rem
         &.item-height-small
           min-height: 2rem
         &.item-height-normal
