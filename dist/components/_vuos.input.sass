@@ -1,0 +1,150 @@
+.vuoz-input,
+.vuoz-input__main
+  &.is-tiny
+    height: $tiny-height
+    @extend .has-padding-left-s
+    @extend .has-padding-right-xs
+    input
+      @extend .has-text-ultra-small
+      @extend .has-margin-right-xs
+      line-height: $tiny-height
+  &.is-small
+    height: $small-height
+    @extend .has-padding-left-sm
+    @extend .has-padding-right-s
+    input
+      @extend .has-text-small
+      @extend .has-margin-right-s
+      line-height: $small-height
+  &.is-normal
+    height: $normal-height
+    @extend .has-padding-left-ms
+    @extend .has-padding-right-sm
+    input
+      @extend .has-text-normal
+      @extend .has-margin-right-sm
+      line-height: $normal-height
+  &.is-large
+    height: $large-height
+    @extend .has-padding-left-md
+    @extend .has-padding-right-sm
+    input
+      @extend .has-text-large
+      @extend .has-margin-right-sm
+      line-height: $large-height
+
+  .vuoz-input__main
+    @extend .is-inline-flex
+    @extend .align-center
+
+.vuoz-input .vuoz-input__label
+  @extend .is-inline-flex
+  @extend .align-center
+  @extend .has-text-semi-bold
+
+.vuoz-input
+  position: relative
+  &.is-tiny .vuoz-input__label
+    height: $tiny-height
+    @extend .has-text-ultra-small
+  &.is-small .vuoz-input__label
+    height: $small-height
+    @extend .has-text-small
+  &.is-normal .vuoz-input__label
+    height: $normal-height
+    @extend .has-text-normal
+  &.is-large .vuoz-input__label
+    height: $large-height
+    @extend .has-text-large
+
+.vuoz-input input
+  color: white
+  border: none
+  outline: none
+  background-color: transparent
+
+.vuoz-input__main
+  .vuoz-input__number-stepper
+    position: relative
+    @extend .is-flex-column
+    .up-arrow
+      position: absolute
+      transform: rotate(180deg)
+      right: 0
+    .down-arrow
+      position: absolute
+      right: 0
+    .up-actuator
+      position: absolute
+      top: 0
+      right: 0
+    .down-actuator
+      position: absolute
+      bottom: 0
+      right: 0
+  &.is-tiny
+    .up-actuator
+      top: #{-$tiny-height / 5}
+      bottom: #{$tiny-height / 3}
+      right: #{-$tiny-height / 5}
+      width: $tiny-height
+    .down-actuator
+      top: #{$tiny-height / 3}
+      bottom: #{-$tiny-height / 5}
+      right: #{-$tiny-height / 5}
+      width: $tiny-height
+  &.is-small
+    .up-actuator
+      top: #{-$small-height / 5}
+      bottom: #{$small-height / 3}
+      right: #{-$small-height / 5}
+      width: $small-height
+    .down-actuator
+      top: #{$small-height / 3}
+      bottom: #{-$small-height / 5}
+      right: #{-$small-height / 5}
+      width: $small-height
+  &.is-normal
+    .up-actuator
+      top: #{-$normal-height / 5}
+      bottom: #{$normal-height / 3}
+      right: #{-$normal-height / 5}
+      width: $normal-height
+    .down-actuator
+      top: #{$normal-height / 3}
+      bottom: #{-$normal-height / 5}
+      right: #{-$normal-height / 5}
+      width: $normal-height
+  &.is-large
+    .up-actuator
+      top: #{-$large-height / 5}
+      bottom: #{$large-height / 3}
+      right: #{-$large-height / 5}
+      width: $large-height
+    .down-actuator
+      top: #{$large-height / 3}
+      bottom: #{-$large-height / 5}
+      right: #{-$large-height / 5}
+      width: $large-height
+
+.vuoz-input__main
+  &.is-tiny
+    .up-arrow
+      top: -#{$tiny-height / 5}
+    .down-arrow
+      bottom: -#{$tiny-height / 5}
+  &.is-small
+    .up-arrow
+      top: -#{$small-height / 5}
+    .down-arrow
+      bottom: -#{$small-height / 5}
+  &.is-normal
+    .up-arrow
+      top: -#{$normal-height / 5}
+    .down-arrow
+      bottom: -#{$normal-height / 5}
+  &.is-large
+    .up-arrow
+      top: -#{$large-height / 5}
+    .down-arrow
+      bottom: -#{$large-height / 5}
