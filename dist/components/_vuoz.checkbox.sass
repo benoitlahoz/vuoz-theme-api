@@ -1,0 +1,49 @@
+.vuoz-checkbox
+  @extend .is-flex
+  @extend .align-center
+  @extend .justify-center
+  @extend .is-unselectable
+  @extend .has-background-transparent
+  position: relative
+  &:focus
+    outline: none
+  &.is-tiny
+    height: $tiny-height
+    width: $tiny-height
+    .vuoz-checkbox__content
+      height: #{$tiny-height * 0.5}
+      min-height: #{$tiny-height * 0.5}
+      width: #{$tiny-height * 0.5}
+      min-width: #{$tiny-height * 0.5}
+      &.is-rounded
+        border-radius: #{$tiny-height * 0.5 / 5}
+  &.is-small
+    height: $small-height
+    width: $small-height
+    .vuoz-checkbox__content
+      height: #{$small-height * 0.5}
+      width: #{$small-height * 0.5}
+      min-height: #{$small-height * 0.5}
+      min-width: #{$small-height * 0.5}
+      &.is-rounded
+        border-radius: #{$small-height * 0.5 / 5}
+  &.is-normal
+    height: $normal-height
+    width: $normal-height
+    .vuoz-checkbox__content
+      height: #{$normal-height * 0.5}
+      width: #{$normal-height * 0.5}
+      min-height: #{$normal-height * 0.5}
+      min-width: #{$normal-height * 0.5}
+      &.is-rounded
+        border-radius: #{$normal-height * 0.5 / 5}
+  &.is-large
+    height: $large-height
+    width: $large-height
+    .vuoz-checkbox__content
+      height: #{$large-height * 0.5}
+      width: #{$large-height * 0.5}
+      min-height: #{$large-height * 0.5}
+      min-width: #{$large-height * 0.5}
+      &.is-rounded
+        border-radius: #{$large-height * 0.5 / 5}
