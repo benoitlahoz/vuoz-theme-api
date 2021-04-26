@@ -1,6 +1,6 @@
 {
   "name": "@vuoz/theme-api",
-  "version": "0.1.146",
+  "version": "0.1.147",
   "description": "",
   "main": "./dist",
   "scripts": {
